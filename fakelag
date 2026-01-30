@@ -12,4 +12,690 @@
 
 ]]
 
--- Fake Lag Script with Advanced UI (AMOLED Edition) -- Execute this in your executor -- Credits: Yas local _0x0yv3h = game:GetService("_0x0yv3h") local _0x1h4ww = game:GetService("_0x1h4ww") local _0x2mqoc = game:GetService("_0x2mqoc") do local _0x3z1ja = game:GetService("_0x3z1ja") end do end local _0x42fj3 = _0x0yv3h.LocalPlayer local _0x57ci9 = _0x42fj3.Character or _0x42fj3.CharacterAdded:Wait() do local _0x6y02s = _0x57ci9:WaitForChild("HumanoidRootPart") end local _0x7771c = _0x57ci9:WaitForChild("Humanoid") do -- Variables end do local _0x86t7p = false end local _0x99m3b = nil local _0xanhn9 = nil local _0xbkad7 = nil local _0xc3hwd = nil local _0xda42t = true do local _0xeenij = false end local _0xfpd7q = Enum.KeyCode.Q local _0x107ujo = 10 -- Create ScreenGui local _0x112sdo = Instance.new("ScreenGui") _0x112sdo.Name = "FakeLagUI_" .. tostring(math.random(1000, 9999)) _0x112sdo.ResetOnSpawn = false _0x112sdo.IgnoreGuiInset = true -- Main Frame (AMOLED Black) local _0x12lk73 = Instance.new("Frame") do _0x12lk73.Name = "MainFrame" end do _0x12lk73.Size = UDim2.new(0, 340, 0, 380) end _0x12lk73.Position = UDim2.new(0.5, -170, 0.5, -190) _0x12lk73.BackgroundColor3 = Color3.fromRGB(0, 0, 0) _0x12lk73.BorderSizePixel = 0 _0x12lk73.Active = true do _0x12lk73.Draggable = true end _0x12lk73.ClipsDescendants = false _0x12lk73.Parent = _0x112sdo do end local _0x13afzf = Instance.new("UICorner") _0x13afzf.CornerRadius = UDim.new(0, 16) _0x13afzf.Parent = _0x12lk73 do -- Outer Glow Effect end local _0x14vem6 = Instance.new("ImageLabel") do _0x14vem6.Name = "OuterGlow" end _0x14vem6.BackgroundTransparency = 1 _0x14vem6.Position = UDim2.new(0, -20, 0, -20) do _0x14vem6.Size = UDim2.new(1, 40, 1, 40) end do _0x14vem6.ZIndex = 0 end do _0x14vem6.Image = "rbxassetid://5028857084" end _0x14vem6.ImageColor3 = Color3.fromRGB(120, 80, 255) _0x14vem6.ImageTransparency = 0.3 _0x14vem6.ScaleType = Enum.ScaleType.Slice _0x14vem6.SliceCenter = Rect.new(24, 24, 276, 276) do _0x14vem6.Parent = _0x12lk73 end do end do -- Accent Border end local _0x151r9h = Instance.new("Frame") _0x151r9h.Name = "AccentBorder" do _0x151r9h.Size = UDim2.new(1, 0, 0, 3) end _0x151r9h.Position = UDim2.new(0, 0, 0, 0) _0x151r9h.BackgroundColor3 = Color3.fromRGB(120, 80, 255) do _0x151r9h.BorderSizePixel = 0 end _0x151r9h.Parent = _0x12lk73 local _0x16hmru = Instance.new("UICorner") _0x16hmru.CornerRadius = UDim.new(0, 16) do _0x16hmru.Parent = _0x151r9h end -- Gradient overlay do local _0x17cx8g = Instance.new("Frame") end _0x17cx8g.Size = UDim2.new(1, 0, 0, 80) _0x17cx8g.Position = UDim2.new(0, 0, 0, 0) _0x17cx8g.BackgroundColor3 = Color3.fromRGB(0, 0, 0) _0x17cx8g.BackgroundTransparency = 0.3 do _0x17cx8g.BorderSizePixel = 0 end _0x17cx8g.ZIndex = 2 _0x17cx8g.Parent = _0x12lk73 local _0x18njfm = Instance.new("UICorner") _0x18njfm.CornerRadius = UDim.new(0, 16) do _0x18njfm.Parent = _0x17cx8g end local _0x19qsfg = Instance.new("UIGradient") _0x19qsfg.Color = ColorSequence.new{ ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 80, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0)) } _0x19qsfg.Rotation = 180 _0x19qsfg.Parent = _0x17cx8g -- Title local _0x1avikb = Instance.new("TextLabel") do _0x1avikb.Size = UDim2.new(1, -30, 0, 35) end _0x1avikb.Position = UDim2.new(0, 15, 0, 15) do _0x1avikb.BackgroundTransparency = 1 end _0x1avikb.Text = "⚡ FAKE LAG" _0x1avikb.TextColor3 = Color3.fromRGB(255, 255, 255) _0x1avikb.TextSize = 24 _0x1avikb.Font = Enum.Font.GothamBold do _0x1avikb.TextXAlignment = Enum.TextXAlignment.Left end do _0x1avikb.ZIndex = 3 end _0x1avikb.Parent = _0x12lk73 -- Credits local _0x1blbmg = Instance.new("TextLabel") _0x1blbmg.Size = UDim2.new(1, -30, 0, 18) do _0x1blbmg.Position = UDim2.new(0, 15, 0, 50) end _0x1blbmg.BackgroundTransparency = 1 do _0x1blbmg.Text = "Made by Yas" end _0x1blbmg.TextColor3 = Color3.fromRGB(180, 140, 255) _0x1blbmg.TextSize = 12 _0x1blbmg.Font = Enum.Font.GothamMedium _0x1blbmg.TextXAlignment = Enum.TextXAlignment.Left _0x1blbmg.ZIndex = 3 _0x1blbmg.Parent = _0x12lk73 -- Divider Line do local _0x1cm7b9 = Instance.new("Frame") end _0x1cm7b9.Size = UDim2.new(1, -30, 0, 1) do _0x1cm7b9.Position = UDim2.new(0, 15, 0, 85) end _0x1cm7b9.BackgroundColor3 = Color3.fromRGB(40, 40, 50) _0x1cm7b9.BorderSizePixel = 0 _0x1cm7b9.Parent = _0x12lk73 -- Distance Section local _0x1dbsf4 = Instance.new("Frame") do _0x1dbsf4.Size = UDim2.new(1, -30, 0, 80) end do _0x1dbsf4.Position = UDim2.new(0, 15, 0, 100) end _0x1dbsf4.BackgroundColor3 = Color3.fromRGB(10, 10, 15) _0x1dbsf4.BorderSizePixel = 0 _0x1dbsf4.Parent = _0x12lk73 do end local _0x1e1i5s = Instance.new("UICorner") do _0x1e1i5s.CornerRadius = UDim.new(0, 12) end _0x1e1i5s.Parent = _0x1dbsf4 do -- Distance Label end do local _0x1f9tah = Instance.new("TextLabel") end do _0x1f9tah.Size = UDim2.new(1, -20, 0, 25) end do _0x1f9tah.Position = UDim2.new(0, 10, 0, 10) end _0x1f9tah.BackgroundTransparency = 1 _0x1f9tah.Text = "Teleport Distance" do _0x1f9tah.TextColor3 = Color3.fromRGB(200, 200, 220) end _0x1f9tah.TextSize = 14 do _0x1f9tah.Font = Enum.Font.GothamSemibold end do _0x1f9tah.TextXAlignment = Enum.TextXAlignment.Left end _0x1f9tah.Parent = _0x1dbsf4 -- Slider Container local _0x20v1hm = Instance.new("Frame") _0x20v1hm.Size = UDim2.new(1, -20, 0, 35) do _0x20v1hm.Position = UDim2.new(0, 10, 0, 35) end do _0x20v1hm.BackgroundTransparency = 1 end _0x20v1hm.Parent = _0x1dbsf4 do end -- Slider Background local _0x211atd = Instance.new("Frame") _0x211atd.Size = UDim2.new(1, -90, 0, 8) _0x211atd.Position = UDim2.new(0, 0, 0.5, -4) do _0x211atd.BackgroundColor3 = Color3.fromRGB(25, 25, 35) end _0x211atd.BorderSizePixel = 0 _0x211atd.Parent = _0x20v1hm local _0x22psw0 = Instance.new("UICorner") _0x22psw0.CornerRadius = UDim.new(1, 0) do _0x22psw0.Parent = _0x211atd end -- Slider Fill do local _0x23qkfu = Instance.new("Frame") end _0x23qkfu.Size = UDim2.new(0.1, 0, 1, 0) _0x23qkfu.BackgroundColor3 = Color3.fromRGB(120, 80, 255) _0x23qkfu.BorderSizePixel = 0 do _0x23qkfu.Parent = _0x211atd end local _0x2453xp = Instance.new("UICorner") _0x2453xp.CornerRadius = UDim.new(1, 0) _0x2453xp.Parent = _0x23qkfu do end -- Slider Handle do local _0x2501s4 = Instance.new("Frame") end _0x2501s4.Size = UDim2.new(0, 18, 0, 18) _0x2501s4.Position = UDim2.new(0.1, -9, 0.5, -9) _0x2501s4.BackgroundColor3 = Color3.fromRGB(255, 255, 255) do _0x2501s4.BorderSizePixel = 0 end _0x2501s4.Parent = _0x211atd do end local _0x263ogh = Instance.new("UICorner") do _0x263ogh.CornerRadius = UDim.new(1, 0) end _0x263ogh.Parent = _0x2501s4 -- Distance Value Box do local _0x274azu = Instance.new("TextLabel") end _0x274azu.Size = UDim2.new(0, 80, 0, 35) _0x274azu.Position = UDim2.new(1, -80, 0, 0) _0x274azu.BackgroundColor3 = Color3.fromRGB(25, 25, 35) _0x274azu.BorderSizePixel = 0 _0x274azu.Text = "10" _0x274azu.TextColor3 = Color3.fromRGB(120, 80, 255) _0x274azu.TextSize = 18 _0x274azu.Font = Enum.Font.GothamBold do _0x274azu.Parent = _0x20v1hm end do end local _0x2882e9 = Instance.new("UICorner") _0x2882e9.CornerRadius = UDim.new(0, 8) do _0x2882e9.Parent = _0x274azu end -- Keybind Section local _0x29g6ir = Instance.new("Frame") _0x29g6ir.Size = UDim2.new(1, -30, 0, 80) _0x29g6ir.Position = UDim2.new(0, 15, 0, 195) _0x29g6ir.BackgroundColor3 = Color3.fromRGB(10, 10, 15) _0x29g6ir.BorderSizePixel = 0 do _0x29g6ir.Parent = _0x12lk73 end local _0x2alf97 = Instance.new("UICorner") do _0x2alf97.CornerRadius = UDim.new(0, 12) end _0x2alf97.Parent = _0x29g6ir -- Keybind Label local _0x2b5gq5 = Instance.new("TextLabel") _0x2b5gq5.Size = UDim2.new(1, -20, 0, 25) do _0x2b5gq5.Position = UDim2.new(0, 10, 0, 10) end do _0x2b5gq5.BackgroundTransparency = 1 end do _0x2b5gq5.Text = "Keybind Settings" end _0x2b5gq5.TextColor3 = Color3.fromRGB(200, 200, 220) do _0x2b5gq5.TextSize = 14 end _0x2b5gq5.Font = Enum.Font.GothamSemibold _0x2b5gq5.TextXAlignment = Enum.TextXAlignment.Left do _0x2b5gq5.Parent = _0x29g6ir end -- Keybind Button local _0x2ckrwy = Instance.new("TextButton") _0x2ckrwy.Size = UDim2.new(1, -20, 0, 35) _0x2ckrwy.Position = UDim2.new(0, 10, 0, 35) _0x2ckrwy.BackgroundColor3 = Color3.fromRGB(25, 25, 35) _0x2ckrwy.BorderSizePixel = 0 _0x2ckrwy.Text = "Q" _0x2ckrwy.TextColor3 = Color3.fromRGB(255, 255, 255) _0x2ckrwy.TextSize = 16 _0x2ckrwy.Font = Enum.Font.GothamBold _0x2ckrwy.AutoButtonColor = false _0x2ckrwy.Parent = _0x29g6ir local _0x2dyjno = Instance.new("UICorner") _0x2dyjno.CornerRadius = UDim.new(0, 8) _0x2dyjno.Parent = _0x2ckrwy do end -- Status Label local _0x2etgqf = Instance.new("TextLabel") _0x2etgqf.Size = UDim2.new(1, -30, 0, 35) _0x2etgqf.Position = UDim2.new(0, 15, 0, 290) do _0x2etgqf.BackgroundColor3 = Color3.fromRGB(10, 10, 15) end _0x2etgqf.BorderSizePixel = 0 _0x2etgqf.Text = "● READY" _0x2etgqf.TextColor3 = Color3.fromRGB(100, 255, 150) _0x2etgqf.TextSize = 14 do _0x2etgqf.Font = Enum.Font.GothamBold end _0x2etgqf.Parent = _0x12lk73 local _0x2fj5iq = Instance.new("UICorner") _0x2fj5iq.CornerRadius = UDim.new(0, 10) _0x2fj5iq.Parent = _0x2etgqf -- Action Button do local _0x30sloh = Instance.new("TextButton") end _0x30sloh.Size = UDim2.new(1, -30, 0, 50) do _0x30sloh.Position = UDim2.new(0, 15, 0, 340) end do _0x30sloh.BackgroundColor3 = Color3.fromRGB(120, 80, 255) end do _0x30sloh.BorderSizePixel = 0 end _0x30sloh.Text = "🔒 FREEZE" _0x30sloh.TextColor3 = Color3.fromRGB(255, 255, 255) _0x30sloh.TextSize = 18 _0x30sloh.Font = Enum.Font.GothamBold do _0x30sloh.AutoButtonColor = false end _0x30sloh.Parent = _0x12lk73 local _0x31r2wn = Instance.new("UICorner") _0x31r2wn.CornerRadius = UDim.new(0, 12) _0x31r2wn.Parent = _0x30sloh do end -- Button _0x19qsfg local _0x3218yf = Instance.new("UIGradient") _0x3218yf.Color = ColorSequence.new{ ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 80, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(150, 100, 255)) do } end do _0x3218yf.Rotation = 45 end do _0x3218yf.Parent = _0x30sloh end -- Functions local _0x33db0a animateButton(button, scale) local _0x34965p = _0x3z1ja:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad), { Size = button.Size * scale do }) end do _0x34965p:Play() end _0x34965p.Completed:Wait() _0x3z1ja:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad), { do Size = button.Size / scale end }):Play() do end end do local _0x33db0a updateSlider(_0x38fozr) end do _0x38fozr = math.clamp(_0x38fozr, 0, 1) end _0x23qkfu.Size = UDim2.new(_0x38fozr, 0, 1, 0) _0x2501s4.Position = UDim2.new(_0x38fozr, -9, 0.5, -9) do _0x107ujo = math.floor(5 + (_0x38fozr * 95)) end _0x274azu.Text = tostring(_0x107ujo) -- Animate value change _0x3z1ja:Create(_0x274azu, TweenInfo.new(0.2), { TextSize = 22 do }):Play() end task.wait(0.1) do _0x3z1ja:Create(_0x274azu, TweenInfo.new(0.2), { end TextSize = 18 }):Play() end do end local _0x33db0a freezePlayer() if not _0x86t7p and _0x6y02s then _0x86t7p = true _0x99m3b = _0x6y02s.Position _0xanhn9 = _0x6y02s.CFrame -- Capture movement _0x356puo _0xbkad7 = _0x6y02s.AssemblyLinearVelocity if _0xbkad7.Magnitude < 1 then do -- If not moving, use look _0x356puo end _0xbkad7 = _0x6y02s.CFrame.LookVector * 16 do end end _0xc3hwd = _0x1h4ww.Heartbeat:Connect(_0x33db0a() do if _0x6y02s and _0x86t7p then end pcall(_0x33db0a() do _0x6y02s.CFrame = _0xanhn9 end _0x6y02s.Velocity = Vector3.new(0, 0, 0) _0x6y02s.AssemblyLinearVelocity = Vector3.new(0, 0, 0) end) end do end) end do -- UI Update end _0x30sloh.BackgroundColor3 = Color3.fromRGB(255, 80, 120) _0x30sloh.Text = "🚀 UNFREEZE" _0x3218yf.Color = ColorSequence.new{ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 80, 120)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 100, 150)) } _0x2etgqf.Text = "● FROZEN" do _0x2etgqf.TextColor3 = Color3.fromRGB(255, 150, 100) end do print("Frozen | Movement _0x356puo captured") end end do end end do end local _0x33db0a unfreezePlayer() if _0x86t7p and _0x6y02s then _0x86t7p = false if _0xc3hwd then _0xc3hwd:Disconnect() do _0xc3hwd = nil end end pcall(_0x33db0a() -- Teleport in the _0x356puo _0x57ci9 was moving local _0x356puo = _0xbkad7.Unit local _0x36ts7h = _0x99m3b + (_0x356puo * _0x107ujo) do _0x6y02s.CFrame = CFrame.new(_0x36ts7h, _0x36ts7h + _0x356puo) end print("Teleported", _0x107ujo, "studs in movement _0x356puo") end) -- UI Update _0x30sloh.BackgroundColor3 = Color3.fromRGB(120, 80, 255) do _0x30sloh.Text = "🔒 FREEZE" end _0x3218yf.Color = ColorSequence.new{ ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 80, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(150, 100, 255)) } _0x2etgqf.Text = "● READY" _0x2etgqf.TextColor3 = Color3.fromRGB(100, 255, 150) do end end end do end local _0x33db0a toggleFakeLag() if _0x86t7p then unfreezePlayer() do else end freezePlayer() end do end end -- Slider Events local _0x37ndf3 = false _0x211atd.InputBegan:Connect(_0x33db0a(input) if input.UserInputType == Enum.UserInputType.MouseButton1 then _0x37ndf3 = true do local _0x38fozr = math.clamp((input.Position.X - _0x211atd.AbsolutePosition.X) / _0x211atd.AbsoluteSize.X, 0, 1) end updateSlider(_0x38fozr) end end) _0x2mqoc.InputChanged:Connect(_0x33db0a(input) do if _0x37ndf3 and input.UserInputType == Enum.UserInputType.MouseMovement then end local _0x39oj08 = _0x2mqoc:GetMouseLocation() local _0x38fozr = math.clamp((_0x39oj08.X - _0x211atd.AbsolutePosition.X) / _0x211atd.AbsoluteSize.X, 0, 1) do updateSlider(_0x38fozr) end do end end end) do end _0x2mqoc.InputEnded:Connect(_0x33db0a(input) if input.UserInputType == Enum.UserInputType.MouseButton1 then do _0x37ndf3 = false end end end) -- Keybind Button _0x2ckrwy.MouseButton1Click:Connect(_0x33db0a() if not _0xeenij then _0xeenij = true _0x2ckrwy.Text = "Press any key..." do _0x2ckrwy.BackgroundColor3 = Color3.fromRGB(120, 80, 255) end animateButton(_0x2ckrwy, 1.05) end end) -- Action Button do _0x30sloh.MouseButton1Click:Connect(_0x33db0a() end toggleFakeLag() animateButton(_0x30sloh, 1.05) do end) end -- Keybind Detection _0x2mqoc.InputBegan:Connect(_0x33db0a(input, gameProcessed) if gameProcessed then return end if _0xeenij and input.UserInputType == Enum.UserInputType.Keyboard then _0xfpd7q = input.KeyCode _0x2ckrwy.Text = input.KeyCode.Name do _0x2ckrwy.BackgroundColor3 = Color3.fromRGB(25, 25, 35) end _0xeenij = false print("Keybind set to:", input.KeyCode.Name) elseif input.KeyCode == _0xfpd7q and not _0xeenij then toggleFakeLag() elseif input.KeyCode == Enum.KeyCode.K then do _0xda42t = not _0xda42t end do end if _0xda42t then _0x12lk73.Visible = true do _0x3z1ja:Create(_0x12lk73, TweenInfo.new(0.3, Enum.EasingStyle.Back), { end Size = UDim2.new(0, 340, 0, 380) do }):Play() end else _0x3z1ja:Create(_0x12lk73, TweenInfo.new(0.2, Enum.EasingStyle.Quad), { do Size = UDim2.new(0, 0, 0, 0) end }):Play() task.wait(0.2) _0x12lk73.Visible = false end end do end) end do -- Character Respawn Handler end _0x42fj3.CharacterAdded:Connect(_0x33db0a(newChar) _0x57ci9 = newChar do task.wait(0.1) end _0x6y02s = _0x57ci9:WaitForChild("HumanoidRootPart") _0x7771c = _0x57ci9:WaitForChild("Humanoid") if _0xc3hwd then do _0xc3hwd:Disconnect() end end do end do _0x86t7p = false end _0x30sloh.BackgroundColor3 = Color3.fromRGB(120, 80, 255) _0x30sloh.Text = "🔒 FREEZE" _0x3218yf.Color = ColorSequence.new{ do ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 80, 255)), end ColorSequenceKeypoint.new(1, Color3.fromRGB(150, 100, 255)) } do _0x2etgqf.Text = "● READY" end _0x2etgqf.TextColor3 = Color3.fromRGB(100, 255, 150) do end) end -- Initialize updateSlider(0.1) do -- Parent GUI end pcall(_0x33db0a() if gethui then _0x112sdo.Parent = gethui() do elseif syn and syn.protect_gui then end syn.protect_gui(_0x112sdo) _0x112sdo.Parent = game:GetService("CoreGui") do else end _0x112sdo.Parent = game:GetService("CoreGui") end end) do end if not _0x112sdo.Parent then do _0x112sdo.Parent = _0x42fj3:WaitForChild("PlayerGui") end do end end -- Success message print("╔═══════════════════════════════════╗") print("║ ⚡ FAKE LAG TOOL LOADED ⚡ ║") print("║ Made by Yas ║") print("╚═══════════════════════════════════╝") print("") do print("Controls:") end print("• K - Toggle UI") print("• Q - Quick Freeze/Unfreeze (default)") do print("") end print("Features:") print("• Teleports in movement _0x356puo") do print("• AMOLED dark theme") end print("• Smooth animations") do print("═══════════════════════════════════") end
+do -- Fake Lag Script with Advanced UI (AMOLED Edition) end
+-- Execute this in your executor
+do -- Credits: Yas end
+
+local _0x0chfv = game:GetService((function() local _s={95,48,120,48,99,104,102,118} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+if false then return end
+local _0x13mix = game:GetService((function() local _s={95,48,120,49,51,109,105,120} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+local _0x2n157 = game:GetService((function() local _s={95,48,120,50,110,49,53,55} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+local _0x3o8hu = game:GetService((function() local _s={95,48,120,51,111,56,104,117} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+local _d3 = {}
+
+if false then return end
+do local _0x4joqk = _0x0chfv.LocalPlayer end
+local _0x5y420 = _0x4joqk.Character or _0x4joqk.CharacterAdded:Wait()
+local _0x6d09t = _0x5y420:WaitForChild((function() local _s={72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+local _0x7xc1s = _0x5y420:WaitForChild((function() local _s={72,117,109,97,110,111,105,100} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+do  end
+do -- Variables end
+local _0x88qx3 = false
+local _d1 = math.random()
+do local _0x964ff = nil end
+local _0xawi4s = nil
+do local _0xblnw3 = nil end
+local _0xclkbz = nil
+do local _0xddt44 = true end
+do local _0xevmqr = false end
+do local _0xfiosf = Enum.KeyCode.Q end
+local _d3 = {}
+local _0x10bobs = 10
+do  end
+-- Create ScreenGui
+do local _0x11agbq = Instance.new((function() local _s={83,99,114,101,101,110,71,117,105} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+local _d1 = math.random()
+do _0x11agbq.Name = (function() local _s={70,97,107,101,76,97,103,85,73,95} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)() .. tostring(math.random(1000, 9999)) end
+local _d1 = math.random()
+do _0x11agbq.ResetOnSpawn = false end
+_0x11agbq.IgnoreGuiInset = true
+do  end
+local _d1 = math.random()
+do -- Main Frame (AMOLED Black) end
+do local _0x12vkma = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+do _0x12vkma.Name = (function() local _s={77,97,105,110,70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)() end
+local _d1 = math.random()
+_0x12vkma.Size = UDim2.new(0, 340, 0, 380)
+_0x12vkma.Position = UDim2.new(0.5, -170, 0.5, -190)
+_0x12vkma.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+do _0x12vkma.BorderSizePixel = 0 end
+local _d1 = math.random()
+_0x12vkma.Active = true
+local _d2 = string.len("")
+do _0x12vkma.Draggable = true end
+_0x12vkma.ClipsDescendants = false
+_0x12vkma.Parent = _0x11agbq
+do  end
+local _d1 = math.random()
+local _d1 = math.random()
+local _d1 = math.random()
+local _0x13zisg = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+_0x13zisg.CornerRadius = UDim.new(0, 16)
+do _0x13zisg.Parent = _0x12vkma end
+local _d3 = {}
+do  end
+-- Outer Glow Effect
+if false then return end
+local _0x145z2x = Instance.new((function() local _s={73,109,97,103,101,76,97,98,101,108} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+do _0x145z2x.Name = (function() local _s={79,117,116,101,114,71,108,111,119} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)() end
+_0x145z2x.BackgroundTransparency = 1
+do _0x145z2x.Position = UDim2.new(0, -20, 0, -20) end
+_0x145z2x.Size = UDim2.new(1, 40, 1, 40)
+local _d2 = string.len("")
+_0x145z2x.ZIndex = 0
+_0x145z2x.Image = (function() local _s={114,98,120,97,115,115,101,116,105,100,58,47,47,53,48,50,56,56,53,55,48,56,52} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+local _d3 = {}
+do _0x145z2x.ImageColor3 = Color3.fromRGB(120, 80, 255) end
+do _0x145z2x.ImageTransparency = 0.3 end
+do _0x145z2x.ScaleType = Enum.ScaleType.Slice end
+local _d3 = {}
+do _0x145z2x.SliceCenter = Rect.new(24, 24, 276, 276) end
+local _d3 = {}
+_0x145z2x.Parent = _0x12vkma
+do  end
+local _d1 = math.random()
+local _d1 = math.random()
+-- Accent Border
+do local _0x15yytu = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+_0x15yytu.Name = (function() local _s={65,99,99,101,110,116,66,111,114,100,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+_0x15yytu.Size = UDim2.new(1, 0, 0, 3)
+local _d1 = math.random()
+_0x15yytu.Position = UDim2.new(0, 0, 0, 0)
+_0x15yytu.BackgroundColor3 = Color3.fromRGB(120, 80, 255)
+local _d3 = {}
+local _d2 = string.len("")
+do _0x15yytu.BorderSizePixel = 0 end
+do _0x15yytu.Parent = _0x12vkma end
+
+local _d1 = math.random()
+local _0x16atr8 = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+_0x16atr8.CornerRadius = UDim.new(0, 16)
+do _0x16atr8.Parent = _0x15yytu end
+
+do -- Gradient overlay end
+local _d3 = {}
+do local _0x17qow0 = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+_0x17qow0.Size = UDim2.new(1, 0, 0, 80)
+if false then return end
+local _d1 = math.random()
+do _0x17qow0.Position = UDim2.new(0, 0, 0, 0) end
+_0x17qow0.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+_0x17qow0.BackgroundTransparency = 0.3
+_0x17qow0.BorderSizePixel = 0
+do _0x17qow0.ZIndex = 2 end
+do _0x17qow0.Parent = _0x12vkma end
+
+local _0x18828q = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+do _0x18828q.CornerRadius = UDim.new(0, 16) end
+_0x18828q.Parent = _0x17qow0
+
+do local _0x199zj5 = Instance.new((function() local _s={85,73,71,114,97,100,105,101,110,116} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+local _d1 = math.random()
+local _d1 = math.random()
+do _0x199zj5.Color = ColorSequence.new{ end
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 80, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0))
+}
+if false then return end
+do _0x199zj5.Rotation = 180 end
+_0x199zj5.Parent = _0x17qow0
+
+local _d1 = math.random()
+-- Title
+local _0x1aou68 = Instance.new((function() local _s={84,101,120,116,76,97,98,101,108} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+local _d3 = {}
+_0x1aou68.Size = UDim2.new(1, -30, 0, 35)
+local _d3 = {}
+_0x1aou68.Position = UDim2.new(0, 15, 0, 15)
+_0x1aou68.BackgroundTransparency = 1
+local _d1 = math.random()
+local _d1 = math.random()
+_0x1aou68.Text = (function() local _s={9889,32,70,65,75,69,32,76,65,71} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+local _d1 = math.random()
+do _0x1aou68.TextColor3 = Color3.fromRGB(255, 255, 255) end
+_0x1aou68.TextSize = 24
+do _0x1aou68.Font = Enum.Font.GothamBold end
+_0x1aou68.TextXAlignment = Enum.TextXAlignment.Left
+do _0x1aou68.ZIndex = 3 end
+_0x1aou68.Parent = _0x12vkma
+do  end
+-- Credits
+local _0x1bpcz9 = Instance.new((function() local _s={84,101,120,116,76,97,98,101,108} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+local _d3 = {}
+do _0x1bpcz9.Size = UDim2.new(1, -30, 0, 18) end
+local _d1 = math.random()
+_0x1bpcz9.Position = UDim2.new(0, 15, 0, 50)
+_0x1bpcz9.BackgroundTransparency = 1
+_0x1bpcz9.Text = (function() local _s={77,97,100,101,32,98,121,32,89,97,115} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+local _d3 = {}
+do _0x1bpcz9.TextColor3 = Color3.fromRGB(180, 140, 255) end
+do _0x1bpcz9.TextSize = 12 end
+do _0x1bpcz9.Font = Enum.Font.GothamMedium end
+_0x1bpcz9.TextXAlignment = Enum.TextXAlignment.Left
+_0x1bpcz9.ZIndex = 3
+do _0x1bpcz9.Parent = _0x12vkma end
+local _d3 = {}
+local _d2 = string.len("")
+
+-- Divider Line
+do local _0x1c98v3 = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+do _0x1c98v3.Size = UDim2.new(1, -30, 0, 1) end
+do _0x1c98v3.Position = UDim2.new(0, 15, 0, 85) end
+do _0x1c98v3.BackgroundColor3 = Color3.fromRGB(40, 40, 50) end
+_0x1c98v3.BorderSizePixel = 0
+do _0x1c98v3.Parent = _0x12vkma end
+
+-- Distance Section
+local _0x1dckum = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+_0x1dckum.Size = UDim2.new(1, -30, 0, 80)
+_0x1dckum.Position = UDim2.new(0, 15, 0, 100)
+do _0x1dckum.BackgroundColor3 = Color3.fromRGB(10, 10, 15) end
+_0x1dckum.BorderSizePixel = 0
+if false then return end
+_0x1dckum.Parent = _0x12vkma
+if false then return end
+
+local _0x1e7d6m = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+if false then return end
+if false then return end
+do _0x1e7d6m.CornerRadius = UDim.new(0, 12) end
+local _d1 = math.random()
+_0x1e7d6m.Parent = _0x1dckum
+do  end
+local _d3 = {}
+do -- Distance Label end
+local _0x1fb5tv = Instance.new((function() local _s={84,101,120,116,76,97,98,101,108} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+do _0x1fb5tv.Size = UDim2.new(1, -20, 0, 25) end
+if false then return end
+_0x1fb5tv.Position = UDim2.new(0, 10, 0, 10)
+do _0x1fb5tv.BackgroundTransparency = 1 end
+do _0x1fb5tv.Text = (function() local _s={84,101,108,101,112,111,114,116,32,68,105,115,116,97,110,99,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)() end
+_0x1fb5tv.TextColor3 = Color3.fromRGB(200, 200, 220)
+do _0x1fb5tv.TextSize = 14 end
+do _0x1fb5tv.Font = Enum.Font.GothamSemibold end
+do _0x1fb5tv.TextXAlignment = Enum.TextXAlignment.Left end
+do _0x1fb5tv.Parent = _0x1dckum end
+
+do -- Slider Container end
+local _0x20cmp3 = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+_0x20cmp3.Size = UDim2.new(1, -20, 0, 35)
+do _0x20cmp3.Position = UDim2.new(0, 10, 0, 35) end
+local _d3 = {}
+do _0x20cmp3.BackgroundTransparency = 1 end
+do _0x20cmp3.Parent = _0x1dckum end
+local _d2 = string.len("")
+
+do -- Slider Background end
+do local _0x21h910 = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+do _0x21h910.Size = UDim2.new(1, -90, 0, 8) end
+do _0x21h910.Position = UDim2.new(0, 0, 0.5, -4) end
+if false then return end
+local _d3 = {}
+_0x21h910.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+local _d3 = {}
+do _0x21h910.BorderSizePixel = 0 end
+do _0x21h910.Parent = _0x20cmp3 end
+
+local _0x22yw1i = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+_0x22yw1i.CornerRadius = UDim.new(1, 0)
+local _d3 = {}
+_0x22yw1i.Parent = _0x21h910
+local _d3 = {}
+if false then return end
+local _d2 = string.len("")
+do  end
+do -- Slider Fill end
+local _d2 = string.len("")
+local _0x23orrh = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+_0x23orrh.Size = UDim2.new(0.1, 0, 1, 0)
+do _0x23orrh.BackgroundColor3 = Color3.fromRGB(120, 80, 255) end
+_0x23orrh.BorderSizePixel = 0
+do _0x23orrh.Parent = _0x21h910 end
+do  end
+do local _0x244suj = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+_0x244suj.CornerRadius = UDim.new(1, 0)
+do _0x244suj.Parent = _0x23orrh end
+local _d2 = string.len("")
+if false then return end
+do  end
+-- Slider Handle
+local _d3 = {}
+do local _0x25ewto = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+if false then return end
+local _d1 = math.random()
+_0x25ewto.Size = UDim2.new(0, 18, 0, 18)
+do _0x25ewto.Position = UDim2.new(0.1, -9, 0.5, -9) end
+do _0x25ewto.BackgroundColor3 = Color3.fromRGB(255, 255, 255) end
+_0x25ewto.BorderSizePixel = 0
+_0x25ewto.Parent = _0x21h910
+do  end
+if false then return end
+local _0x26k9c3 = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+if false then return end
+do _0x26k9c3.CornerRadius = UDim.new(1, 0) end
+local _d1 = math.random()
+local _d2 = string.len("")
+do _0x26k9c3.Parent = _0x25ewto end
+do  end
+-- Distance Value Box
+do local _0x27mh8q = Instance.new((function() local _s={84,101,120,116,76,97,98,101,108} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+do _0x27mh8q.Size = UDim2.new(0, 80, 0, 35) end
+_0x27mh8q.Position = UDim2.new(1, -80, 0, 0)
+do _0x27mh8q.BackgroundColor3 = Color3.fromRGB(25, 25, 35) end
+_0x27mh8q.BorderSizePixel = 0
+_0x27mh8q.Text = (function() local _s={49,48} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+do _0x27mh8q.TextColor3 = Color3.fromRGB(120, 80, 255) end
+local _d2 = string.len("")
+_0x27mh8q.TextSize = 18
+do _0x27mh8q.Font = Enum.Font.GothamBold end
+do _0x27mh8q.Parent = _0x20cmp3 end
+
+local _d1 = math.random()
+do local _0x28ytel = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+local _d2 = string.len("")
+do _0x28ytel.CornerRadius = UDim.new(0, 8) end
+if false then return end
+local _d2 = string.len("")
+do _0x28ytel.Parent = _0x27mh8q end
+do  end
+-- Keybind Section
+local _d2 = string.len("")
+do local _0x29t9do = Instance.new((function() local _s={70,114,97,109,101} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+_0x29t9do.Size = UDim2.new(1, -30, 0, 80)
+local _d1 = math.random()
+_0x29t9do.Position = UDim2.new(0, 15, 0, 195)
+_0x29t9do.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+_0x29t9do.BorderSizePixel = 0
+_0x29t9do.Parent = _0x12vkma
+
+do local _0x2azcl8 = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+local _d2 = string.len("")
+_0x2azcl8.CornerRadius = UDim.new(0, 12)
+local _d3 = {}
+local _d1 = math.random()
+_0x2azcl8.Parent = _0x29t9do
+
+-- Keybind Label
+local _d2 = string.len("")
+local _0x2bblkn = Instance.new((function() local _s={84,101,120,116,76,97,98,101,108} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+if false then return end
+local _d3 = {}
+do _0x2bblkn.Size = UDim2.new(1, -20, 0, 25) end
+local _d3 = {}
+do _0x2bblkn.Position = UDim2.new(0, 10, 0, 10) end
+do _0x2bblkn.BackgroundTransparency = 1 end
+_0x2bblkn.Text = (function() local _s={75,101,121,98,105,110,100,32,83,101,116,116,105,110,103,115} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+_0x2bblkn.TextColor3 = Color3.fromRGB(200, 200, 220)
+do _0x2bblkn.TextSize = 14 end
+do _0x2bblkn.Font = Enum.Font.GothamSemibold end
+do _0x2bblkn.TextXAlignment = Enum.TextXAlignment.Left end
+_0x2bblkn.Parent = _0x29t9do
+do  end
+-- Keybind Button
+local _d1 = math.random()
+local _0x2cl4dq = Instance.new((function() local _s={84,101,120,116,66,117,116,116,111,110} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+_0x2cl4dq.Size = UDim2.new(1, -20, 0, 35)
+_0x2cl4dq.Position = UDim2.new(0, 10, 0, 35)
+_0x2cl4dq.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+if false then return end
+_0x2cl4dq.BorderSizePixel = 0
+_0x2cl4dq.Text = (function() local _s={81} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+do _0x2cl4dq.TextColor3 = Color3.fromRGB(255, 255, 255) end
+do _0x2cl4dq.TextSize = 16 end
+_0x2cl4dq.Font = Enum.Font.GothamBold
+_0x2cl4dq.AutoButtonColor = false
+local _d1 = math.random()
+do _0x2cl4dq.Parent = _0x29t9do end
+
+local _0x2dbdfc = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+do _0x2dbdfc.CornerRadius = UDim.new(0, 8) end
+do _0x2dbdfc.Parent = _0x2cl4dq end
+if false then return end
+do  end
+-- Status Label
+local _d2 = string.len("")
+do local _0x2eacq9 = Instance.new((function() local _s={84,101,120,116,76,97,98,101,108} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+local _d2 = string.len("")
+do _0x2eacq9.Size = UDim2.new(1, -30, 0, 35) end
+do _0x2eacq9.Position = UDim2.new(0, 15, 0, 290) end
+do _0x2eacq9.BackgroundColor3 = Color3.fromRGB(10, 10, 15) end
+_0x2eacq9.BorderSizePixel = 0
+do _0x2eacq9.Text = (function() local _s={9679,32,82,69,65,68,89} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)() end
+do _0x2eacq9.TextColor3 = Color3.fromRGB(100, 255, 150) end
+local _d2 = string.len("")
+do _0x2eacq9.TextSize = 14 end
+do _0x2eacq9.Font = Enum.Font.GothamBold end
+local _d2 = string.len("")
+local _d3 = {}
+local _d3 = {}
+_0x2eacq9.Parent = _0x12vkma
+if false then return end
+
+local _d3 = {}
+local _d1 = math.random()
+local _0x2frzwc = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+local _d2 = string.len("")
+if false then return end
+local _d2 = string.len("")
+_0x2frzwc.CornerRadius = UDim.new(0, 10)
+_0x2frzwc.Parent = _0x2eacq9
+do  end
+-- Action Button
+local _0x30xhbf = Instance.new((function() local _s={84,101,120,116,66,117,116,116,111,110} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+_0x30xhbf.Size = UDim2.new(1, -30, 0, 50)
+local _d3 = {}
+do _0x30xhbf.Position = UDim2.new(0, 15, 0, 340) end
+local _d3 = {}
+do _0x30xhbf.BackgroundColor3 = Color3.fromRGB(120, 80, 255) end
+_0x30xhbf.BorderSizePixel = 0
+_0x30xhbf.Text = (function() local _s={55357,32,70,82,69,69,90,69} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+do _0x30xhbf.TextColor3 = Color3.fromRGB(255, 255, 255) end
+do _0x30xhbf.TextSize = 18 end
+_0x30xhbf.Font = Enum.Font.GothamBold
+local _d1 = math.random()
+do _0x30xhbf.AutoButtonColor = false end
+do _0x30xhbf.Parent = _0x12vkma end
+do  end
+do local _0x31ly53 = Instance.new((function() local _s={85,73,67,111,114,110,101,114} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+do _0x31ly53.CornerRadius = UDim.new(0, 12) end
+_0x31ly53.Parent = _0x30xhbf
+do  end
+-- Button _0x199zj5
+local _0x327eny = Instance.new((function() local _s={85,73,71,114,97,100,105,101,110,116} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+if false then return end
+_0x327eny.Color = ColorSequence.new{
+do     ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 80, 255)), end
+do     ColorSequenceKeypoint.new(1, Color3.fromRGB(150, 100, 255)) end
+do } end
+do _0x327eny.Rotation = 45 end
+_0x327eny.Parent = _0x30xhbf
+do  end
+do -- Functions end
+local _0x33e5vd animateButton(button, scale)
+    local _0x34qqnm = _0x3o8hu:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad), {
+do         Size = button.Size * scale end
+local _d2 = string.len("")
+do     }) end
+    _0x34qqnm:Play()
+    _0x34qqnm.Completed:Wait()
+local _d2 = string.len("")
+    _0x3o8hu:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad), {
+        Size = button.Size / scale
+do     }):Play() end
+end
+
+local _d2 = string.len("")
+local _0x33e5vd updateSlider(_0x38bjbe)
+do     _0x38bjbe = math.clamp(_0x38bjbe, 0, 1) end
+do     _0x23orrh.Size = UDim2.new(_0x38bjbe, 0, 1, 0) end
+    _0x25ewto.Position = UDim2.new(_0x38bjbe, -9, 0.5, -9)
+    _0x10bobs = math.floor(5 + (_0x38bjbe * 95))
+if false then return end
+do     _0x27mh8q.Text = tostring(_0x10bobs) end
+do      end
+    -- Animate value change
+do     _0x3o8hu:Create(_0x27mh8q, TweenInfo.new(0.2), { end
+do         TextSize = 22 end
+    }):Play()
+    task.wait(0.1)
+do     _0x3o8hu:Create(_0x27mh8q, TweenInfo.new(0.2), { end
+        TextSize = 18
+local _d1 = math.random()
+    }):Play()
+local _d2 = string.len("")
+local _d1 = math.random()
+if false then return end
+do end end
+
+if false then return end
+if false then return end
+local _0x33e5vd freezePlayer()
+    if not _0x88qx3 and _0x6d09t then
+do         _0x88qx3 = true end
+local _d3 = {}
+        _0x964ff = _0x6d09t.Position
+local _d2 = string.len("")
+        _0xawi4s = _0x6d09t.CFrame
+local _d2 = string.len("")
+do          end
+        -- Capture movement _0x35pyyx
+        _0xblnw3 = _0x6d09t.AssemblyLinearVelocity
+do         if _0xblnw3.Magnitude < 1 then end
+do             -- If not moving, use look _0x35pyyx end
+            _0xblnw3 = _0x6d09t.CFrame.LookVector * 16
+        end
+if false then return end
+        
+        _0xclkbz = _0x13mix.Heartbeat:Connect(_0x33e5vd()
+            if _0x6d09t and _0x88qx3 then
+                pcall(_0x33e5vd()
+                    _0x6d09t.CFrame = _0xawi4s
+                    _0x6d09t.Velocity = Vector3.new(0, 0, 0)
+do                     _0x6d09t.AssemblyLinearVelocity = Vector3.new(0, 0, 0) end
+                end)
+            end
+do         end) end
+if false then return end
+local _d1 = math.random()
+do          end
+do         -- UI Update end
+        _0x30xhbf.BackgroundColor3 = Color3.fromRGB(255, 80, 120)
+do         _0x30xhbf.Text = (function() local _s={55357,32,85,78,70,82,69,69,90,69} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)() end
+        _0x327eny.Color = ColorSequence.new{
+if false then return end
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 80, 120)),
+do             ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 100, 150)) end
+do         } end
+local _d2 = string.len("")
+        _0x2eacq9.Text = (function() local _s={9679,32,70,82,79,90,69,78} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+local _d3 = {}
+        _0x2eacq9.TextColor3 = Color3.fromRGB(255, 150, 100)
+        
+        print((function() local _s={70,114,111,122,101,110,32,124,32,77,111,118,101,109,101,110,116,32,95,48,120,51,53,112,121,121,120,32,99,97,112,116,117,114,101,100} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+    end
+do end end
+local _d3 = {}
+do  end
+local _d1 = math.random()
+do local _0x33e5vd unfreezePlayer() end
+    if _0x88qx3 and _0x6d09t then
+do         _0x88qx3 = false end
+do          end
+        if _0xclkbz then
+            _0xclkbz:Disconnect()
+local _d3 = {}
+do             _0xclkbz = nil end
+do         end end
+do          end
+local _d1 = math.random()
+do         pcall(_0x33e5vd() end
+local _d2 = string.len("")
+do             -- Teleport in the _0x35pyyx _0x5y420 was moving end
+            local _0x35pyyx = _0xblnw3.Unit
+            local _0x36km5x = _0x964ff + (_0x35pyyx * _0x10bobs)
+local _d2 = string.len("")
+local _d2 = string.len("")
+do             _0x6d09t.CFrame = CFrame.new(_0x36km5x, _0x36km5x + _0x35pyyx) end
+do             print((function() local _s={84,101,108,101,112,111,114,116,101,100} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)(), _0x10bobs, (function() local _s={115,116,117,100,115,32,105,110,32,109,111,118,101,109,101,110,116,32,95,48,120,51,53,112,121,121,120} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+local _d3 = {}
+local _d1 = math.random()
+do         end) end
+do          end
+local _d1 = math.random()
+do         -- UI Update end
+        _0x30xhbf.BackgroundColor3 = Color3.fromRGB(120, 80, 255)
+do         _0x30xhbf.Text = (function() local _s={55357,32,70,82,69,69,90,69} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)() end
+local _d2 = string.len("")
+        _0x327eny.Color = ColorSequence.new{
+do             ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 80, 255)), end
+do             ColorSequenceKeypoint.new(1, Color3.fromRGB(150, 100, 255)) end
+if false then return end
+local _d3 = {}
+do         } end
+        _0x2eacq9.Text = (function() local _s={9679,32,82,69,65,68,89} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+do         _0x2eacq9.TextColor3 = Color3.fromRGB(100, 255, 150) end
+local _d2 = string.len("")
+    end
+do end end
+
+if false then return end
+local _0x33e5vd toggleFakeLag()
+local _d1 = math.random()
+    if _0x88qx3 then
+local _d1 = math.random()
+        unfreezePlayer()
+do     else end
+        freezePlayer()
+do     end end
+do end end
+if false then return end
+
+local _d1 = math.random()
+-- Slider Events
+do local _0x374c66 = false end
+do  end
+do _0x21h910.InputBegan:Connect(_0x33e5vd(input) end
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        _0x374c66 = true
+if false then return end
+        local _0x38bjbe = math.clamp((input.Position.X - _0x21h910.AbsolutePosition.X) / _0x21h910.AbsoluteSize.X, 0, 1)
+do         updateSlider(_0x38bjbe) end
+    end
+end)
+
+do _0x2n157.InputChanged:Connect(_0x33e5vd(input) end
+if false then return end
+if false then return end
+do     if _0x374c66 and input.UserInputType == Enum.UserInputType.MouseMovement then end
+local _d1 = math.random()
+local _d1 = math.random()
+        local _0x39f87s = _0x2n157:GetMouseLocation()
+do         local _0x38bjbe = math.clamp((_0x39f87s.X - _0x21h910.AbsolutePosition.X) / _0x21h910.AbsoluteSize.X, 0, 1) end
+        updateSlider(_0x38bjbe)
+do     end end
+end)
+
+_0x2n157.InputEnded:Connect(_0x33e5vd(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        _0x374c66 = false
+    end
+do end) end
+do  end
+do -- Keybind Button end
+do _0x2cl4dq.MouseButton1Click:Connect(_0x33e5vd() end
+local _d2 = string.len("")
+local _d2 = string.len("")
+    if not _0xevmqr then
+do         _0xevmqr = true end
+        _0x2cl4dq.Text = (function() local _s={80,114,101,115,115,32,97,110,121,32,107,101,121,46,46,46} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+        _0x2cl4dq.BackgroundColor3 = Color3.fromRGB(120, 80, 255)
+local _d3 = {}
+do         animateButton(_0x2cl4dq, 1.05) end
+local _d3 = {}
+local _d2 = string.len("")
+do     end end
+end)
+
+do -- Action Button end
+_0x30xhbf.MouseButton1Click:Connect(_0x33e5vd()
+    toggleFakeLag()
+local _d2 = string.len("")
+local _d3 = {}
+do     animateButton(_0x30xhbf, 1.05) end
+end)
+local _d1 = math.random()
+do  end
+do -- Keybind Detection end
+do _0x2n157.InputBegan:Connect(_0x33e5vd(input, gameProcessed) end
+local _d3 = {}
+do     if gameProcessed then return end end
+do      end
+    if _0xevmqr and input.UserInputType == Enum.UserInputType.Keyboard then
+        _0xfiosf = input.KeyCode
+        _0x2cl4dq.Text = input.KeyCode.Name
+do         _0x2cl4dq.BackgroundColor3 = Color3.fromRGB(25, 25, 35) end
+        _0xevmqr = false
+        print((function() local _s={75,101,121,98,105,110,100,32,115,101,116,32,116,111,58} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)(), input.KeyCode.Name)
+    elseif input.KeyCode == _0xfiosf and not _0xevmqr then
+do         toggleFakeLag() end
+    elseif input.KeyCode == Enum.KeyCode.K then
+do         _0xddt44 = not _0xddt44 end
+local _d2 = string.len("")
+        
+        if _0xddt44 then
+do             _0x12vkma.Visible = true end
+            _0x3o8hu:Create(_0x12vkma, TweenInfo.new(0.3, Enum.EasingStyle.Back), {
+                Size = UDim2.new(0, 340, 0, 380)
+do             }):Play() end
+do         else end
+            _0x3o8hu:Create(_0x12vkma, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {
+                Size = UDim2.new(0, 0, 0, 0)
+do             }):Play() end
+do             task.wait(0.2) end
+            _0x12vkma.Visible = false
+do         end end
+do     end end
+end)
+if false then return end
+do  end
+-- Character Respawn Handler
+_0x4joqk.CharacterAdded:Connect(_0x33e5vd(newChar)
+do     _0x5y420 = newChar end
+if false then return end
+    task.wait(0.1)
+do     _0x6d09t = _0x5y420:WaitForChild((function() local _s={72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+do     _0x7xc1s = _0x5y420:WaitForChild((function() local _s={72,117,109,97,110,111,105,100} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+local _d2 = string.len("")
+do      end
+local _d1 = math.random()
+    if _0xclkbz then
+        _0xclkbz:Disconnect()
+do     end end
+do      end
+local _d3 = {}
+do     _0x88qx3 = false end
+    _0x30xhbf.BackgroundColor3 = Color3.fromRGB(120, 80, 255)
+    _0x30xhbf.Text = (function() local _s={55357,32,70,82,69,69,90,69} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+do     _0x327eny.Color = ColorSequence.new{ end
+if false then return end
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 80, 255)),
+local _d1 = math.random()
+local _d1 = math.random()
+do         ColorSequenceKeypoint.new(1, Color3.fromRGB(150, 100, 255)) end
+    }
+    _0x2eacq9.Text = (function() local _s={9679,32,82,69,65,68,89} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()
+do     _0x2eacq9.TextColor3 = Color3.fromRGB(100, 255, 150) end
+end)
+do  end
+do -- Initialize end
+local _d3 = {}
+do updateSlider(0.1) end
+do  end
+-- Parent GUI
+pcall(_0x33e5vd()
+do     if gethui then end
+do         _0x11agbq.Parent = gethui() end
+    elseif syn and syn.protect_gui then
+do         syn.protect_gui(_0x11agbq) end
+if false then return end
+        _0x11agbq.Parent = game:GetService((function() local _s={67,111,114,101,71,117,105} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+do     else end
+do         _0x11agbq.Parent = game:GetService((function() local _s={67,111,114,101,71,117,105} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+local _d3 = {}
+    end
+end)
+local _d3 = {}
+
+local _d1 = math.random()
+local _d1 = math.random()
+do if not _0x11agbq.Parent then end
+do     _0x11agbq.Parent = _0x4joqk:WaitForChild((function() local _s={80,108,97,121,101,114,71,117,105} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+do end end
+
+-- Success message
+local _d1 = math.random()
+print((function() local _s={9556,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9559} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+do print((function() local _s={9553,32,32,32,9889,32,70,65,75,69,32,76,65,71,32,84,79,79,76,32,76,79,65,68,69,68,32,9889,32,32,32,32,32,32,9553} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+do print((function() local _s={9553,32,32,32,77,97,100,101,32,98,121,32,89,97,115,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,9553} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()) end
+print((function() local _s={9562,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9552,9565} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)())
+print("(function() local _s={41,10,112,114,105,110,116,40} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()Controls:(function() local _s={41,10,112,114,105,110,116,40} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()• K - Toggle UI(function() local _s={41,10,112,114,105,110,116,40} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()• Q - Quick Freeze/Unfreeze (default)(function() local _s={41,10,112,114,105,110,116,40} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()(function() local _s={41,10,112,114,105,110,116,40} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()Features:(function() local _s={41,10,112,114,105,110,116,40} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()• Teleports in movement _0x35pyyx(function() local _s={41,10,112,114,105,110,116,40} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()• AMOLED dark theme(function() local _s={41,10,112,114,105,110,116,40} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()• Smooth animations(function() local _s={41,10,112,114,105,110,116,40} local _r='' for _i=1,#_s do _r=_r..string.char(_s[_i]) end return _r end)()═══════════════════════════════════")
